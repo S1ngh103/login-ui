@@ -1,3 +1,4 @@
+/* Background audio and video */
 #background-video {
     width: 100vw;
     height: 100vh;
@@ -6,39 +7,58 @@
     z-index: -1;
 }
 
-.soundtrack{
+.soundtrack {
     display: none;
 }
 
-input:hover{
+/* Hovering Animations */
+input:hover {
     animation-name: hover-login;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
-button:hover{
+
+button:hover {
     animation-name: background-color;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
 
-@keyframes background-color{
-    100%{
+@keyframes background-color {
+    100% {
         background-color: rgb(15, 198, 208);
     }
 }
 
-@keyframes hover-login{
-    100%{
+@keyframes hover-login {
+    100% {
         background-color: rgb(15, 198, 208);
     }
+}
+
+/* Styling */
+body {
+    overflow: hidden;
 }
 
 input {
     border: none;
     border-bottom: 2px solid rgb(15, 198, 208);
+    background-color: transparent;
+    color: white;
+    width: 25%;
 }
 
-.container{
+input::placeholder {
+    color: white;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -46,46 +66,26 @@ input {
     align-items: center;
 }
 
-.login-box{
+.login-box {
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/22f72e2e-9f0f-422d-ad1a-5ee91bb83ecb/dfx6hvd-6f1e5257-4fb0-451e-8f76-a3defcb049f3.png/v1/fill/w_700,h_350/batman_brucewayne_benaffleck_batarang_by_legalol963_dfx6hvd-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvMjJmNzJlMmUtOWYwZi00MjJkLWFkMWEtNWVlOTFiYjgzZWNiXC9kZng2aHZkLTZmMWU1MjU3LTRmYjAtNDUxZS04Zjc2LWEzZGVmY2IwNDlmMy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.qYij1xLdtMKHmzXevDrQiYM3SAM7-K9atpjBuSpWrp4");
-    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 120%;
     border-style: solid;
     border-width: 1px;
     border-radius: 12px;
     border-color: rgb(255, 255, 255);
     background-color: transparent;
-    max-width: 600px;
-    min-width: 300px;
-    width: 33%;
-    min-height: 300px;
-    max-height: 600px;
-    height: 40%;
+    width: 50vw;
+    height: 50vh;
     box-shadow: 0 0 20px 7px rgb(15, 198, 208);
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.username, .password{
+.username,
+.password,
+.login {
     align-self: center;
-}
-
-.login{
-    align-self: center;
-}
-
-button{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-
-input{
-    background-color: transparent;
-    color: white;
-}
-
-input::placeholder{
-    color: white;
 }

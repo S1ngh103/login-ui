@@ -9,7 +9,7 @@
 
 </head>
 
-<body scroll="no" style="overflow: hidden">
+<body scroll="no">
     <video id="background-video" autoplay loop muted poster="background.png">
         <source src="hud.mp4" type="video/mp4">
     </video>
@@ -18,12 +18,11 @@
     </audio>
     <div class="container">
         <div class="login-box">
-            <div class="username">
-                <input type="text" placeholder="Username">
-            </div>
-            <div class="password">
-                <input type="password" placeholder="Password">
-            </div>
+            <!-- Fix unnecessary divs here -->
+            <input class="username" type="text" placeholder="Username">
+            <br>
+            <input class="password" type="password" placeholder="Password">
+            <br>
             <button class="login" type="submit">LOG-IN</button>
         </div>
     </div>
