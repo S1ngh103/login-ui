@@ -48,6 +48,7 @@ input {
 
 .login-box{
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/22f72e2e-9f0f-422d-ad1a-5ee91bb83ecb/dfx6hvd-6f1e5257-4fb0-451e-8f76-a3defcb049f3.png/v1/fill/w_700,h_350/batman_brucewayne_benaffleck_batarang_by_legalol963_dfx6hvd-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvMjJmNzJlMmUtOWYwZi00MjJkLWFkMWEtNWVlOTFiYjgzZWNiXC9kZng2aHZkLTZmMWU1MjU3LTRmYjAtNDUxZS04Zjc2LWEzZGVmY2IwNDlmMy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.qYij1xLdtMKHmzXevDrQiYM3SAM7-K9atpjBuSpWrp4");
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     border-style: solid;
@@ -81,6 +82,10 @@ button{
 }
 
 input{
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: transparent;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
 }
